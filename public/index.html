@@ -9,54 +9,44 @@
     <title>Join a room</title>
 </head>
 <body>
-    <header>        
-        <nav>                    
-            <ul class="mainNav sticky">
-                <li class="navTitle"><a >jibbernet</a></li>
-                <li class="navItem"><a href="user_profile.html">User profile</a></li>                               
-                <!-- <li class="navItem"><a href="login.php">login</a></li>
-                <li class="navItem"><a href="signup.php">sign up</a></li> -->
-                <li class="navItem"><a href="logout.php">Logout</a></li>
-            </ul>        
-        </nav>
+    <header class="navBar">  
+        <h3 class="navTitle"><a >jibbernet</a></h3>
+        <h3 class="navItem"><a href="user_profile.html">User profile</a></h3>
+        <!-- <li class="navItem"><a href="login.php">login</a></li>
+        <li class="navItem"><a href="signup.php">sign up</a></li> -->
+        <h3 class="navItem"><a href="logout.php">Logout</a></h3>                           
     </header>  
 
-    <div id="container" class="container">
-        
-            <div class="join-container">
-                <header class="join-header">
-                    <h2>Join a room to practice your reading and writing.</h2>
-                </header>
-                <main class="join-main">
-                    <form action="chat.html">
-                        <div class="form-control">
-                            <label for="username">Username</label>
-                            <input
-                                type="text"
-                                name="username"
-                                id="username"
-                                placeholder="Enter username..."
-                                required
-                            />
-                        </div>
-                        <div class="form-control">
-                            <label for="room">Room</label>
-                            <select name="room" id="room">
-                                <option value="English">English</option>
-                                <option value="French">French</option>
-                                <option value="German">German</option>
-                                <option value="Spanish">Spanish</option>
-                            </select>
-                        </div>
-                        <button type="submit" class="btn">Join Chat</button>
-                    </form>
-                </main>
-            </div>
-        
-
-    </div>
-
-
+    <div class="join-container">
+        <header class="join-header">
+            <h2>Join a room to practice your reading and writing.</h2>
+        </header>
+        <main class="join-main">
+            <form action="chat.html">
+                <div class="form-control">
+                    <label for="username">Username</label>
+                    <input
+                        type="text"
+                        name="username"
+                        id="username"
+                        placeholder="Enter username..."
+                        required
+                    />
+                </div>
+                <div class="form-control">
+                    <label for="room">Room</label>
+                    <select name="room" id="room">
+                        <option value="English">English</option>
+                        <option value="French">French</option>
+                        <option value="German">German</option>
+                        <option value="Spanish">Spanish</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn">Join Chat</button>
+            </form>
+        </main>
+    </div>  
+    
     <footer class="footer"></footer>
     
 </body>

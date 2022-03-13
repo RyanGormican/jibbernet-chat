@@ -11,18 +11,13 @@
 </head>
 
 <body>
-    <header>        
-        <nav>                    
-            <ul class="mainNav sticky">
-                <li class="navTitle"><a >jibbernet</a></li>
-                <li class="navItem"><a href="user_profile.html">User profile</a></li>
+    <header class="navBar">  
+                <h3 class="navTitle"><a >jibbernet</a></h3>
+                <h3 class="navItem"><a href="user_profile.html">User profile</a></h3>
                 <!-- <li class="navItem"><a href="login.php">login</a></li>
                 <li class="navItem"><a href="signup.php">sign up</a></li> -->
-                <li class="navItem"><a href="logout.php">Logout</a></li>
-            </ul>        
-        </nav>
+                <h3 class="navItem"><a href="logout.php">Logout</a></h3>                           
     </header>  
-    <div id="container" class="container">  
         <div class="chat-container">
             <header class="chat-header">
                 <h2 id="room-name"></h2>                
@@ -31,27 +26,27 @@
             <main class="chat-main">
                 <div class="chat-messages">	
                    	
-                </div>
-                <div class="chat-sidebar">   
-                    <h3><i class="fas fa-users"></i> Users</h3>
-                    <ul id="users">
-                    </ul>
-                </div>
-                <div class="chat-form-container">
-                    <form id="chat-form">
-                      <input
-                        id="msg"
-                        type="text"
-                        placeholder="Type something"
-                        required
-                        autocomplete="off"
-                      />
-                      <button class="btn"><i class="fas fa-paper-plane"></i> Send</button>
-                    </form>
-                </div>       
-            </main>                     
+                </div>                                    
+            </main>   
+            <div class="chat-sidebar">   
+                <h3><i class="fas fa-users"></i> Users</h3>
+                <ul id="users">
+                </ul>
+            </div>  
+            <div class="chat-form-container">
+                <form id="chat-form">
+                  <input
+                    id="msg"
+                    type="text"
+                    placeholder="Type something"
+                    required
+                    autocomplete="off"
+                  />
+                  <button class="btn"><i class="fas fa-paper-plane"></i> Send</button>
+                </form>
+            </div>                   
         </div> 
-    </div>
+    
     <footer class="footer"></footer>
     <!-- this script used to query URL. This is to get the user and room from URL -->
     <script 
