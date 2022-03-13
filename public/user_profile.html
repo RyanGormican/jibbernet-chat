@@ -1,0 +1,66 @@
+<!-- <?php
+	session_start();
+	if(!isset($_SESSION["user_id"])) {
+		header("Location: login.php");
+		exit();
+	} else {
+		$username = $_GET["user"];  
+        $user_id = $_SESSION["user_id"];      
+		
+		// load the database and get the orders for this user
+		$db = new mysqli("localhost", "hanley2d", "th3ori3s", "hanley2d");
+	  	if ($db->connect_error) {
+	  		die ("Connection failed: " . $db->connect_error);
+		}
+	
+		$q = "SELECT p.post_id, p.repost_id, p.post, p.post_date, u.user_id, u.username, u.avatar_URL, 
+        (SELECT COUNT(like_id) FROM Likes l WHERE p.post_id = l.post_id) AS Likes,
+        (SELECT COUNT(dislike_id) FROM Dislikes d WHERE p.post_id = d.post_id) AS Dislikes
+        FROM Posts p
+        LEFT JOIN
+        Users u
+        ON p.user_id = u.user_id
+        WHERE u.username = '$username'
+        ORDER BY p.post_date DESC
+        LIMIT 20;";
+		$result = $db->query($q);	
+	}
+?> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="./css/stylesheet.css">   
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+    <title>User detail</title>
+</head>
+<body>
+    <header>        
+        <nav>                    
+            <ul class="mainNav sticky">
+                <li class="navTitle"><a href="homepage.php">jibbernet</a></li>
+                <!-- <li class="navItem"><a href="post_repost.php">post</a></li> -->
+                <!--                
+                <li class="navItem"><a href="login.html">login</a></li>
+                <li class="navItem"><a href="signup.html">sign up</a></li>       -->
+                <li class="navItem"><a href="logout.php">Logout</a></li>
+            </ul>        
+        </nav>
+    </header>
+    
+    <div class="container">
+        <div class="box">                       
+            <form id="signup" action="signup.php" method="POST" enctype="multipart/form-data">                       
+                
+                
+            </form>
+        </div> 
+    </div>
+
+    <footer class="footer"> 
+        
+    </footer>
+<script type="text/javascript" src="js/like_dislike.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/stylesheet.css"/>   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+    <title>Join a room</title>
+</head>
+<body>
+    <header>        
+        <nav>                    
+            <ul class="mainNav sticky">
+                <li class="navTitle"><a >jibbernet</a></li>
+                <li class="navItem"><a href="user_profile.html">User profile</a></li>                               
+                <!-- <li class="navItem"><a href="login.php">login</a></li>
+                <li class="navItem"><a href="signup.php">sign up</a></li> -->
+                <li class="navItem"><a href="logout.php">Logout</a></li>
+            </ul>        
+        </nav>
+    </header>  
+
+    <div id="container" class="container">
+        
+            <div class="join-container">
+                <header class="join-header">
+                    <h1>Join a room to practice your reading and writing.</h1>
+                </header>
+                <main class="join-main">
+                    <form action="chat.html">
+                        <div class="form-control">
+                            <label for="username">Username</label>
+                            <input
+                                type="text"
+                                name="username"
+                                id="username"
+                                placeholder="Enter username..."
+                                required
+                            />
+                        </div>
+                        <div class="form-control">
+                            <label for="room">Room</label>
+                            <select name="room" id="room">
+                                <option value="English">English</option>
+                                <option value="French">French</option>
+                                <option value="German">German</option>
+                                <option value="Spanish">Spanish</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn">Join Chat</button>
+                    </form>
+                </main>
+            </div>
+        
+
+    </div>
+
+
+    <footer class="footer"></footer>
+    
+</body>
+</html>
