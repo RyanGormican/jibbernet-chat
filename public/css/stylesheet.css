@@ -57,6 +57,13 @@ ul {
 	font-size: 14px;
     border-radius: 8px;
 }
+::-webkit-scrollbar {
+    width: 10px;
+}
+  ::-webkit-scrollbar-thumb {
+    background: var(--background); 
+    border-radius: 5px;
+}
 
 /*****************************************
  chat.html 
@@ -121,6 +128,7 @@ ul {
 	padding: 20px 20px 60px;
 	overflow-y: auto;
     scrollbar-width: thin;
+    scrollbar-color: var(--background) var(--header);
     
 }
 
@@ -143,6 +151,7 @@ ul {
 	padding: 10px 20px;
 	overflow-y: auto;
     scrollbar-width: thin;
+    scrollbar-color: var(--background) var(--header);
     max-height: 500px;  
 }
 
