@@ -169,14 +169,16 @@ ul {
     grid-row: 11;
 	padding: 10px 30px;
 	background-color: var(--message);
-    display: flex;
     align-items: center;
-    max-height: 50px;
-    align-self: baseline;
+    max-height: 50px;   
 }
 .chat-form-container #msg {
-    width: 700px;
     border-radius: 8px;
+}
+#chat-form {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
 }
 
 .chat-form-container input[type='text'] {
