@@ -136,11 +136,11 @@ if (isset($_POST["submitted"]))
 
 <body>
     <header class="navBar">  
-        <h3 class="navTitle"><a >jibbernet</a></h3>
-        <h3 class="navItem"><a href="user_profile.html">User profile</a></h3>
-        <!-- <li class="navItem"><a href="login.php">login</a></li>
-        <li class="navItem"><a href="signup.php">sign up</a></li> -->
-        <h3 class="navItem"><a href="logout.php">Logout</a></h3>                           
+        <h3 class="navTitle"><a href="index.html">jibbernet</a></h3>
+        <!-- <h3 class="navItem"><a href="user_profile.html">User profile</a></h3> -->
+        <h3 class="navItem"><a href="login.html">Log in</a></h3>
+        <!-- <h3 class="navItem"><a href="signup.html">Sign up</a></h3> -->
+        <!-- <h3 class="navItem"><a href="logout.php">Logout</a></h3>                            -->
     </header>     
 
     
@@ -156,8 +156,9 @@ if (isset($_POST["submitted"]))
             <label id="msg_dob" class="err_msg"><?= $error ?></label><br>
             
             <!-- https://stackoverflow.com/questions/38909766/list-of-all-country-languages-for-dropdown-select-menu-html-form -->
-            <h5>Native language</h5>
-            <select data-placeholder="Native language">
+            
+            <select>
+                <option value="none" selected disabled hidden>Native language</option>
                 <option value="AF">Afrikaans</option>
                 <option value="SQ">Albanian</option>
                 <option value="AR">Arabic</option>
@@ -239,14 +240,13 @@ if (isset($_POST["submitted"]))
             <input type="password" name="cpswrd" placeholder="confirm password"/>
             <br><br>
             <input type="hidden" name="submitted" value="1"/>
-            <input type="submit" value="submit" name="submit"/>
-            
+            <button class="btn" type="submit" value="submit" name="submit">Submit</button>            
         </form>              
         <!-- <div id="display_info"></div>             -->
-        <script type="text/javascript" src="js/signup-r.js"></script>
+        
         <p>Already have an account? <br> <a href="./login.html">Login here</a></p>        
     </div> 
-    
+    <script type="text/javascript" src="js/signup-r.js"></script>    
 
     <footer class="footer"> 
     </footer>    
