@@ -205,7 +205,7 @@ ul {
 /*************************************
 Join chat styling - index.html
 *************************************/
-.join-container {
+.roomJoin-container {
     background-color: var(--header);
 	margin: 80px auto;
 	color: #dbd8d2;
@@ -213,28 +213,28 @@ Join chat styling - index.html
     grid-column: col-start 2 /span 7;
     grid-row: 2/8;
 }
-.join-container .btn {
+.roomJoin-container .btn {
     background-color: var(--background);
 }
-.join-header {
+.roomJoin-header {
 	text-align: center;
 	padding: 20px;
 }
-.join-main {
+.roomJoin-main {
 	padding: 30px 40px;	
     color: #dbd8d2;
 }
 
-.join-main .form-control {
+.roomJoin-main .form-control {
 	margin-bottom: 20px;
 }
 
-.join-main label {
+.roomJoin-main label {
 	display: block;
 	margin-bottom: 5px;
 }
 
-.join-main input[type='text'] {
+.roomJoin-main input[type='text'] {
 	font-size: 16px;
 	padding: 5px;
 	height: 40px;
@@ -242,14 +242,14 @@ Join chat styling - index.html
     
 }
 
-.join-main select {
+.roomJoin-main select {
 	font-size: 16px;
 	padding: 5px;
 	height: 40px;
 	width: 100%;
 }
 
-.join-main .btn {
+.roomJoin-main .btn {
 	margin-top: 20px;
 	width: 100%;
     color:#dbd8d2;

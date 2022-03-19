@@ -4,14 +4,14 @@
   "description": "CS 476 Project",
   "main": "server.js",
   "scripts": {
-    "start": "node server",
-    "dev": "nodemon server"
+    "start": "nodemon server.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.3",
     "moment": "^2.29.1",
+    "mysql": "^2.18.1",
     "socket.io": "^4.4.1"
   },
   "devDependencies": {

@@ -1,7 +1,7 @@
 const users = [];
 
 // join user to chat
-function userJoin(id, username, room) {
+function userJoinsRoom(id, username, room) {
     const user = { id, username, room };
     users.push(user);
 
@@ -14,7 +14,7 @@ function getCurrentUser(id) {
 }
 
 // user leaves chat
-function userLeave(id) {
+function userLeavesRoom(id) {
     const index = users.findIndex(user => user.id === id);
     // if user is not found it returns -1
     // if not 1, then return that user with splice function
@@ -30,8 +30,8 @@ function getRoomUsers(room) {
 }
 
 module.exports = {
-    userJoin,
+    userJoinsRoom,
     getCurrentUser,
-    userLeave,
+    userLeavesRoom,
     getRoomUsers,
 };

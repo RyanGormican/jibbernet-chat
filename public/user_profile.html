@@ -1,33 +1,3 @@
-<!-- <?php
-	session_start();
-	if(!isset($_SESSION["user_id"])) {
-		header("Location: login.php");
-		exit();
-	} else {
-		$username = $_GET["user"];  
-        $user_id = $_SESSION["user_id"];      
-		
-		// load the database and get the orders for this user
-		$db = new mysqli("localhost", "hanley2d", "th3ori3s", "hanley2d");
-	  	if ($db->connect_error) {
-	  		die ("Connection failed: " . $db->connect_error);
-		}
-	
-		$q = "SELECT p.post_id, p.repost_id, p.post, p.post_date, u.user_id, u.username, u.avatar_URL, 
-        (SELECT COUNT(like_id) FROM Likes l WHERE p.post_id = l.post_id) AS Likes,
-        (SELECT COUNT(dislike_id) FROM Dislikes d WHERE p.post_id = d.post_id) AS Dislikes
-        FROM Posts p
-        LEFT JOIN
-        Users u
-        ON p.user_id = u.user_id
-        WHERE u.username = '$username'
-        ORDER BY p.post_date DESC
-        LIMIT 20;";
-		$result = $db->query($q);	
-	}
-?> -->
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
