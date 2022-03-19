@@ -4,7 +4,8 @@
   "description": "CS 476 Project",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "node server",
+    "dev": "nodemon server"
   },
   "author": "",
   "license": "ISC",
